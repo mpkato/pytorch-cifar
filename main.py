@@ -11,11 +11,12 @@ import torchvision
 import torchvision.transforms as transforms
 
 import os
+import sys
 import argparse
 
 filedir = os.path.dirname(__file__)
-os.path.append(filedir)
-os.path.append(os.path.join(filedir, "models"))
+sys.path.append(filedir)
+sys.path.append(os.path.join(filedir, "models"))
 from models import *
 
 
